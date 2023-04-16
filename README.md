@@ -11,8 +11,7 @@ class Car:
         self.speed = speed              #WLOG we take speed as an integer in miles/hr
         self.x = x                      #We take lattice points(integer coordinates) as position of car.
         self.y = y  
-        self.direction = direction      # direction of motion of the car in degrees (like 90 is moving towards north, 180 is towards west,-90 is towards south etc.)
-        
+        self.direction = direction      # direction of motion of the car in degrees (like 90 is north, 180 is west,-90 is south etc.)
     def accelerate(self, speed_increment):
         self.speed += speed_increment
     
