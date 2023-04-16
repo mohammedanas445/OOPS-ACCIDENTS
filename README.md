@@ -52,6 +52,7 @@ class Car:
 ******Example test cases of the Car class for the methods with dummy data:******
 
 car1 = Car("Hyundai", "Creta", 2021, 10, 0, 100, -90)
+
 car2 = Car("Maruti", "Swift", 2022, 30, 200, 0 , 180)
 
 car1.accelerate(20)
