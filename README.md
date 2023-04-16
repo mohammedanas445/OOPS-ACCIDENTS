@@ -71,7 +71,7 @@ print(car1.detect_collision(car2,3))    # False
 
 print(car1.detect_collision(car2,4))    # True
 
-print(car1.time_to_collision(car2))     # 3.33333333333 seconds
+print(car1.time_to_collision(car2))     # 3.33333333333 hrs
 
 ____________________________________________________________________________________________________________________________________________________________________
 
@@ -106,7 +106,7 @@ In line 40, I calculated the collision time by the formula , time = relative dis
 (v_rel = sqrt((v1)^2+(v2)^2+2*v1*v2*cos(theta)).
 
 Finally we have tested the methods using the dummy data above and we got the results as expected.
-i.e. collision happens after 3.3333 s and for time less than 3.3333 s the output obtained is false as expected and since 4 is greater than the collision time, we got the output as **True** as collision has already happened:blush:. 
+i.e. collision happens after 3.3333 hr and for time less than 3.3333 hr the output obtained is false as expected and since 4 is greater than the collision time, we got the output as **True** as collision has already happened:blush:. 
                                                 
    ![IMG_20230416_165240](https://user-images.githubusercontent.com/121503560/232306682-48b41a8e-ba7b-4af4-ae88-2fc3c3bde2a6.jpg)
 
