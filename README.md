@@ -1,5 +1,7 @@
 # OOPS-ACCIDENTS
+
 Code for creating a Car class in python, with collision detection and time-to-collision calculation implemented using coordinates and speeds.
+
 import math
 class Car:
     def __init__(self, make, model, year, speed, x, y,direction): 
