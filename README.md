@@ -49,7 +49,7 @@ class Car:
         Time_to_collision =  distance(self, car2)/v_rel
  __________________________________________________________________________________________________________________________________________________________________________    
      
-******example test cases of the Car class for the methods with dummy data:******
+******Example test cases of the Car class for the methods with dummy data:******
 
 car1 = Car("Hyundai", "Creta", 2022, 50, 0, 0)
 car2 = Car("Maruti", "Swift", 2021, 40, 100, 0)
@@ -67,7 +67,7 @@ ________________________________________________________________________________
 
 **************I have also included the code above itself for convenience**************
                                                
-                                               <ins>DECONSTRUCTING THE ABOVE CODE</ins>
+                                              **********DECONSTRUCTING THE ABOVE CODE**********
                                                 
                                                 
                                                 
