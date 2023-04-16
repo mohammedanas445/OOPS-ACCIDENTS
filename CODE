@@ -16,16 +16,16 @@ class Car:
         self.speed = max(0, self.speed - speed_decrement)
         
     def move(self, time):               # updates the position of the car based on its speed and direction
-    dx = self.speed * math.cos(math.degrees(self.direction)) * time
-    dy = self.speed * math.sin(math.degrees(self.direction)) * time
-    self.x += dx
-    self.y += dy
+        dx = self.speed * math.cos(math.degrees(self.direction)) * time
+        dy = self.speed * math.sin(math.degrees(self.direction)) * time
+        self.x += dx
+        self.y += dy
     
     def distance(self, car2):
     # calculates the distance between this car and another car
-    dx = self.x - car2.x
-    dy = self.y - car2.y
-    return math.sqrt(dx*dx + dy*dy)
+        dx = self.x - car2.x
+        dy = self.y - car2.y
+        return math.sqrt(dx*dx + dy*dy)
     
     def collision_possibility(self,car2):
     #Here we calculate the direction of relative velocity and see whether the other car is in that direction or not.
@@ -36,15 +36,15 @@ class Car:
                return false
                
     def detect_collision(self,car2,curent_time):
-         if(collision_possibility(self,car2) and current_time > time_to_collision(self, other)):
-               return true
-         else
-               return False
+        if(collision_possibility(self,car2) and current_time > time_to_collision(self, other)):
+              return true
+        else
+              return False
                
     def time_to_collision(self, other):
     # calculates the time until this car collides with another car
-          v_rel = math.sqrt(self.speed*self.speed+car2.speed*car2.speed+2*self.speed*car2.speed*math.cos(math.degrees(self.direction))
-          Time_to_collision =  distance(self, car2)/v_rel
+        v_rel = math.sqrt(self.speed*self.speed+car2.speed*car2.speed+2*self.speed*car2.speed*math.cos(math.degrees(self.direction))
+        Time_to_collision =  distance(self, car2)/v_rel
  __________________________________________________________________________________________________________________________________________________________________________    
      
 ******example test cases of the Car class for the methods with dummy data:******
