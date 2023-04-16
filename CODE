@@ -49,14 +49,24 @@ class Car:
      
 ******example test cases of the Car class for the methods with dummy data:******
 
-car1 = Car("Hyundai", "Creta", 2022, 50, 0, 0)
-car2 = Car("Maruti", "Swift", 2021, 40, 100, 0)
+car1 = Car("Hyundai", "Creta", 2021, 10, 0, 100, -90)
 
-car1.accelerate(10)
+car2 = Car("Maruti", "Swift", 2022, 30, 200, 0 , 180)
+
+car1.accelerate(20)
+
 car1.move()
 
-car2.accelerate(5)
+car2.accelerate(30)
+
 car2.move()
 
-print(car1.detect_collision(car2))    # False
-print(car1.time_to_collision(car2))   # 3.3333333333333335 seconds
+print(car1.detect_collision(car2,1))    # False
+
+print(car1.detect_collision(car2,2))    # False
+
+print(car1.detect_collision(car2,3))    # False
+
+print(car1.detect_collision(car2,4))    # True
+
+print(car1.time_to_collision(car2))     # 3.33333333333 seconds
