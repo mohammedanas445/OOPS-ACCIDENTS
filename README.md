@@ -55,9 +55,11 @@ car1 = Car("Hyundai", "Creta", 2021, 10, 0, 100, -90)
 car2 = Car("Maruti", "Swift", 2022, 30, 200, 0 , 180)
 
 car1.accelerate(20)
+
 car1.move()
 
 car2.accelerate(30)
+
 car2.move()
 
 print(car1.detect_collision(car2,1))    # False
@@ -100,7 +102,7 @@ The method detect_collision returns true if the collision has happened before th
 time_to_collision and if our time of interest is more than the collision time ,then obviously collision has already happened.
 
 In line 40, I calculated the collision time by the formula , time = relative distance upon relative velocity.
-(v_rel = sqrt(v1*v1+v2*v2+2*v1*v2*cos(theta)).
+(v_rel = sqrt((v1)^2+(v2)^2+2*v1*v2*cos(theta)).
 
 Finally we have tested the methods using the dummy data above and we got the results as expected.
 i.e. collision happens after 3.3333 s and for time less than 3.3333 s the output obtained is false as expected and since 4 is greater than the collision time, we got the output as **True** as collision has already happened:blush:.
