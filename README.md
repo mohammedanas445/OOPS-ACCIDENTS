@@ -64,15 +64,15 @@ car2.accelerate(30)
 
 car2.move()
 
-print(car1.detect_collision(car2,1))    # False
+print(car1.detect_collision(car2,1))         # False
 
-print(car1.detect_collision(car2,2))    # False
+print(car1.detect_collision(car2,2))         # False
+ 
+print(car1.detect_collision(car2,3))         # False
 
-print(car1.detect_collision(car2,3))    # False
+print(car1.detect_collision(car2,4))         # True
 
-print(car1.detect_collision(car2,4))    # True
-
-print(car1.time_to_collision(car2))     # 3.33333333333 hrs
+print(car1.time_to_collision(car2))          # 3.33333333333 hrs
 
 ____________________________________________________________________________________________________________________________________________________________________
 
