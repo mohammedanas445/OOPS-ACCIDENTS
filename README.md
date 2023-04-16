@@ -92,12 +92,12 @@ In line 5 we initialise the attributes by using the method _INIT_ and by the hel
 
 We need to be careful while writing the brake function at line 18 that applying the brake can not make the car reverse its diection.
 
-In line 20 , we just resolve the velocity vector into horizantal and vertical components and updated the position
+In line 20 , we just resolve the velocity vector into horizantal and vertical components and updated the position.
 
 Out of the 6 attributes , we just need to focus on x, y, speed, direction for collision detection and time calculation.
 
-***MAIN IDEA***: Here, We use the concept of relative velocity to find out collision happens or not. Basically,we go to the frame of the first car and draw the trajectory of second car ,if this trajectory is passing through the position of our car1, then they will surely collide.(can refer the attached imahge)
-Line 34 writes the above idea in code as the slope of line joining the 2 cars should be aligned with the dirction of motion of car(resultant velocity direction.)
+***MAIN IDEA***: Here, We use the concept of relative velocity to find out collision happens or not. Basically,we go to the frame of the first car and draw the trajectory of second car ,if this trajectory is passing through the position of our car1, then they will surely collide.(can refer the attached image).
+Line 34 shows the above idea in code as the slope of line joining the 2 cars should be aligned with the direction of motion of car(resultant velocity direction.)
 And the function atan2 is nothing but tan inverse function.
 
 The method detect_collision returns true if the collision has happened before the given moment of time.So, first we calculate the time for collision by the method 
